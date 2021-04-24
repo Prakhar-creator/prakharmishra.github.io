@@ -304,6 +304,25 @@ function closeForm() {
         <a href="https://wa.link/o988ta" class="fa fa-whatsapp"></a>
         <a href="https://www.linkedin.com/in/prakhar-mishra-393027194" class="fa fa-linkedin"></a>
         <a href="https://github.com/Prakhar-creator" class="fa fa-github"></a>
+         <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/11341/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
         <div class="container">
           <form action="action_page.php">
             <h2> SEND ME A MESSAGE !!!</h2>
